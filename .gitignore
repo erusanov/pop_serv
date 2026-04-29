@@ -1,3 +1,4 @@
+```
 # Dependencies
 node_modules/
 
@@ -6,28 +7,10 @@ dist/
 build/
 target/
 
-# TypeScript/JavaScript
-*.js.map
-*.tsbuildinfo
-.nyc_output/
-
-# Logs
-*.log
-
-# Environment variables
+# Environment
 .env
 .env.local
-*.env.*
-
-# IDE specific
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS generated files
-.DS_Store
-Thumbs.db
+.env.*
 
 # Python
 __pycache__/
@@ -38,49 +21,73 @@ __pycache__/
 env/
 venv/
 .venv/
+.venv.bak/
 pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.git/
-.mypy_cache/
-.pytest_cache/
-.hypothesis/
+pip-selfcheck.json
 
-# Compiled binary files
+# Logs
+*.log
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+*.coverage
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.nyc_output/
+coverage/lcov-report/
+test-results/
+junit.xml
+
+# MyPy
+.mypy_cache/
+
+# PyTest
+.pytest_cache/
+
+# Vitest
+.vitest/
+
+# General build/test artifacts
+*.o
+*.obj
 *.exe
 *.dll
 *.so
-*.dylib
-*.class
-*.o
 *.a
-*.obj
 *.out
-
-# Archives
 *.zip
-*.tar.gz
-*.tgz
-*.tar.bz2
-*.tar.xz
-*.rar
-*.7z
 *.gz
+*.tar
+*.tgz
 *.bz2
 *.xz
+*.7z
+*.rar
 *.zst
-
-# Coverage directory used by tools like istanbul
-coverage/
-htmlcov/
-
-# Temporary folders
-tmp/
-temp/
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+```
