@@ -1,3 +1,4 @@
+```
 # Dependencies
 node_modules/
 
@@ -6,28 +7,20 @@ dist/
 build/
 target/
 
-# TypeScript/JavaScript
-*.js.map
-*.tsbuildinfo
-.nyc_output/
-
 # Logs
 *.log
 
 # Environment variables
 .env
 .env.local
-*.env.*
+.env.*
 
-# IDE specific
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS generated files
-.DS_Store
-Thumbs.db
+*.tmp
 
 # Python
 __pycache__/
@@ -48,39 +41,43 @@ nosetests.xml
 coverage.xml
 *.cover
 *.log
-.git/
-.mypy_cache/
-.pytest_cache/
-.hypothesis/
+.DS_Store
+Thumbs.db
 
-# Compiled binary files
-*.exe
-*.dll
-*.so
-*.dylib
-*.class
-*.o
-*.a
-*.obj
-*.out
+# Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+jspm_packages/
+*.lock
 
-# Archives
-*.zip
-*.tar.gz
-*.tgz
-*.tar.bz2
-*.tar.xz
-*.rar
-*.7z
-*.gz
-*.bz2
-*.xz
-*.zst
+# Compiled JavaScript
+*.js.map
+*.jsx.map
+*.ts.map
+*.tsx.map
 
-# Coverage directory used by tools like istanbul
+# Testing
 coverage/
-htmlcov/
+.nyc_output/
+istanbul/
+.mocha.opts
+*.lcov
 
-# Temporary folders
-tmp/
-temp/
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+```

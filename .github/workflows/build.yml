@@ -7,7 +7,7 @@ on:
     branches: [ main, master ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     strategy:
@@ -33,6 +33,16 @@ jobs:
 
     - name: Build Client
       run: npm run build --workspace=client
+      env:
+        CI: true
+
+    - name: Run Server Tests
+      run: npm run test --workspace=server
+      env:
+        CI: true
+
+    - name: Run Client Tests
+      run: npm run test --workspace=client
       env:
         CI: true
 
